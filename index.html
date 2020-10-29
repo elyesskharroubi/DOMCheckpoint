@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/d5fb6ee835.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Da Best Chaneb</title>
+  </head>
+  <body>
+    <header class="bg-primary mainHeader d-flex justify-content-around">
+      <h1>Chaneb</h1>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          id="filterItems"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button> -->
+      </form>
+    </header>
+
+    <section class="container mt-2" id="mainContent">
+      <!-- content -->
+      <div class="content">
+        <!-- card 1 -->
+        <div class="myItem" style="width: 16rem">
+          <span class="itemName">Kosksi bil hout</span>
+          <hr />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta.
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="btn btn-primary buyBtn">Add to Cart</a>
+            <span class="itemPrice">16 DT</span>
+            <a href="#"
+              ><i onclick="redHeart(this)" class="fas fa-heart favBtn"></i
+            ></a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="myItem" style="width: 16rem">
+          <span class="itemName">Mlewi Special</span>
+          <hr />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta.
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="btn btn-primary buyBtn">Add to Cart</a>
+            <span class="itemPrice">7 DT</span>
+            <a href="#"
+              ><i onclick="redHeart(this)" class="fas fa-heart favBtn"></i
+            ></a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="myItem" style="width: 16rem">
+          <span class="itemName">Chapati Double</span>
+          <hr />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta.
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="btn btn-primary buyBtn">Add to Cart</a>
+            <span class="itemPrice">5 DT</span>
+            <a href="#"
+              ><i onclick="redHeart(this)" class="fas fa-heart favBtn"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="myItem" style="width: 16rem">
+          <span class="itemName">S7an Tounsi</span>
+          <hr />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta.
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="btn btn-primary buyBtn">Add to Cart</a>
+            <span class="itemPrice">11 DT</span>
+            <a href="#"
+              ><i onclick="redHeart(this)" class="fas fa-heart favBtn"></i
+            ></a>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="myItem" style="width: 16rem">
+          <span class="itemName">Kaskrout bil 3athma</span>
+          <hr />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta.
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="btn btn-primary buyBtn">Add to Cart</a>
+            <span class="itemPrice">3 DT</span>
+            <a href="#"
+              ><i onclick="redHeart(this)" class="fas fa-heart favBtn"></i
+            ></a>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="myItem" style="width: 16rem">
+          <span class="itemName">Sa7fa Lableli</span>
+          <hr />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta.
+          </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="btn btn-primary buyBtn">Add to Cart</a>
+            <span class="itemPrice">9 DT</span>
+            <a href="#"
+              ><i onclick="redHeart(this)" class="fas fa-heart favBtn"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-2 secondarySection">
+      <!-- row 1 -->
+      <div class="row d-flex justify-content-between">
+        <!-- column -->
+        <div class="col-12 box">
+          <h3>Cart</h3>
+          <hr />
+          <ul class="cartHeader">
+            <li class="cartItemName">Item</li>
+            <li class="cartItemPrice">Price</li>
+            <li class="cartItemQuantity">Quantity</li>
+            <li></li>
+          </ul>
+
+          <!-- <h1 id="cartMsg">YOU WANT NOTHING</h1> -->
+
+          <!-- <ul class="cartRow">
+            <li class="cartItemName">S7an Tounsi</li>
+            <li class="cartItemPrice">11 DT</li>
+            <li class="cartItemQuantity">
+              <input type="number" id="quantityInput" value="1" />
+            </li>
+            <li><button class="removeBtn btn btn-danger">X</button></li>
+          </ul> -->
+          <!--
+          <ul class="cartRow">
+            <li class="cartItemName">Mlewi Special</li>
+            <li class="cartItemPrice">7 DT</li>
+            <li class="cartItemQuantity">
+              <input type="number" id="quantityInput" value="1" />
+            </li>
+            <li><button class="removeBtn btn btn-danger">X</button></li>
+          </ul> -->
+          <hr />
+          <h3 class="total">TOTAL: <span id="totalPrice">0</span> DT</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MY JAVASCRIPT -->
+    <script src="main.js"></script>
+  </body>
+</html>
